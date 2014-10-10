@@ -105,6 +105,7 @@ public class Picture
             sun.changeColor("blue");
             sun2.changeColor("green");
         }
+        
     }   
     
     public void moveSun()

@@ -71,7 +71,7 @@ public class Picture
         sun2.moveVertical(-40);
         sun2.changeSize(80);
         sun2.makeVisible();
-        sun2.slowMoveVertical(170);
+       
         
   
         
@@ -105,5 +105,17 @@ public class Picture
             sun.changeColor("blue");
             sun2.changeColor("green");
         }
-    }
+    }   
+    
+    public void moveSun()
+    {     if (sun !=null)
+        {   sun2.slowMoveVertical(170);
+        }
+}
+
+public void moveSunUp()
+    {     if (sun !=null)
+        {   sun2.slowMoveVertical(-170);
+        }
+}
 }

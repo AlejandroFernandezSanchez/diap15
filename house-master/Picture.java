@@ -111,12 +111,22 @@ public class Picture
     public void moveSun()
     {     if (sun !=null)
         {   sun2.slowMoveVertical(170);
+            wall.changeColor("black");
+            window.changeColor("white");
+            roof.changeColor("black");
+            sun.changeColor("blue");
+            sun2.changeColor("blue");
         }
-}
+    }
 
-public void moveSunUp()
+    public void moveSunUp()
     {     if (sun !=null)
         {   sun2.slowMoveVertical(-170);
+            wall.changeColor("red");
+            window.changeColor("black");
+            roof.changeColor("green");
+            sun.changeColor("blue");
+            sun2.changeColor("green");
         }
-}
+    }
 }

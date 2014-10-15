@@ -17,7 +17,7 @@ public class Picture
     private Circle sun;
     private Circle tierra;
     private Circle sun2;
-    
+    private Person person1;
     /**
      * Constructor for objects of class Picture
      */
@@ -71,9 +71,6 @@ public class Picture
         sun2.moveVertical(-40);
         sun2.changeSize(80);
         sun2.makeVisible();
-       
-        
-  
         
     }
 
@@ -87,8 +84,7 @@ public class Picture
             wall.changeColor("black");
             window.changeColor("white");
             roof.changeColor("black");
-            sun.changeColor("blue");
-            sun2.changeColor("blue");
+            tierra.changeColor("black");
         }
     }
 
@@ -104,6 +100,7 @@ public class Picture
             roof.changeColor("green");
             sun.changeColor("blue");
             sun2.changeColor("green");
+            tierra.changeColor("green");
         }
         
     }   
@@ -114,19 +111,28 @@ public class Picture
             wall.changeColor("black");
             window.changeColor("white");
             roof.changeColor("black");
-            sun.changeColor("blue");
-            sun2.changeColor("blue");
+            tierra.changeColor("black");
         }
     }
 
     public void moveSunUp()
     {     if (sun !=null)
-        {   sun2.slowMoveVertical(-170);
+        {   sun2.moveVertical(-170);
             wall.changeColor("red");
             window.changeColor("black");
             roof.changeColor("green");
             sun.changeColor("blue");
             sun2.changeColor("green");
+            tierra.changeColor("green");
+        }
+    }public void person1Walk()
+    {     if (sun !=null)
+        {   person1 = new Person();
+        person1.moveHorizontal(-250);
+        person1.moveVertical(50);
+        person1.makeVisible();
+        person1.slowMoveHorizontal(400);
+        
         }
     }
 }
